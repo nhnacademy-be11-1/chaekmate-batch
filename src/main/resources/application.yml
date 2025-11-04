@@ -1,1 +1,18 @@
-spring.application.name=chaekmate-batch
+spring:
+  application:
+    name: chaekmate-batch
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
+  instance:
+    prefer-ip-address: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
