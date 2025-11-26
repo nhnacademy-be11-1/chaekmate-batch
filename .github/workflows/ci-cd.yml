@@ -105,4 +105,4 @@ jobs:
             export REDIS_PASSWORD="${{ secrets.REDIS_PASSWORD }}"
             export REDIS_PORT="${{ secrets.REDIS_PORT }}"
             export EUREKA_URL_PROD="${{ secrets.EUREKA_URL_PROD }}"
-            bash -lc ./startup.sh
+            bash -lc ./startup-single.sh
